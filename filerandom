@@ -1,10 +1,1 @@
-@echo off
 
-:: losowanie czasu 1–10 sekund
-set /a delay=%random% %% 10000 + 300
-
-echo Wylosowano czas: %delay% sekund
-timeout /t %delay% /nobreak >nul
-
-:: uruchomienie drugiego pliku
-start "" "host.bat"
